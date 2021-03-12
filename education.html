@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Plains Library</title>
+<style>
+  
+  .box1{
+    border: 4px red solid
+  }
+  .box2{
+    border: 4px green solid
+  }
+
+  .box3 {
+    border: 4px brown solid
+
+  }
+
+  
+</style>
+</head>
+<body>
+  <div class="container-fluid">
+    
+
+    <div class="row navigation">
+      <!-- LOGO -->
+      <div class="col-6 col-lg-12 logo-container">
+         
+      <div class="logo"><a class="logo-link"href="index.html"></a>
+       <img src="/img/mountain.PNG" alt="">
+       <h2>Eugene</h2>
+       <div class="subtext">Public Library</div>
+     </a>
+     </div>
+    
+       </div>
+ 
+         <!-- BURGER -->
+       <div class="col-6"
+       style="display: flex;
+             align-items: center;
+             justify-content: center;">
+   
+   <i class="fas fa-bars burger" style="font-size: 30px;"></i>
+
+       </div>
+       
+     <!-- NAV LINKS -->
+       
+     
+         <ul class="nav-list">
+           <li><div class="search">
+             <input type="text" class="input" placeholder="Search Catalog...">
+             <button class="btn">
+               <i class="fas fa-search"></i>          
+            </button>
+         </li>
+           <li><a href="/index.html">Home</a></li>
+           <li><a href="https://mtsc.ent.sirsi.net/client/en_US/PLAINS/">Catalog</a></li>
+           <li><a href="/education.html">Resources</a></li>
+           <li><a href="/research.html">Research</a></li>
+           <li><a href="/directory.html">Directory</a></li>
+         </ul>
+     </div>
+ 
+
+  <!-- EDUCATION PAGE -->
+    <div class="row education">
+      
+      <div class="col-12 title">
+      <h2>Educational Resources</h2>
+      </div>
+      
+        <!-- oer -->
+      <div class="col12 oer">
+        <h4> O.E.R.</h4>
+     <p>The term “Open Educational Resource(s)” (OER) refers to educational resources (lesson plans, quizzes, syllabi, instructional modules, simulations, etc.) that are freely available for use, reuse, adaptation, and sharing. The worldwide OER movement is rooted in the human right to access high-quality education.</p>
+     <ul class="oer-links">
+       <li><a href="https://www.oercommons.org/hubs/k12">K-12 Remote Learning</a></li>
+       <li><a href="">Common Core</a></li>
+       <li><a href="">Washington OER</a></li>
+       <li><a href="">Open Textbooks (Higher Education)</a></li>
+       <li><a href="">OER Commons</a></li>
+       <li><a href="">Nordic University Health</a></li>
+       <li><a href="">UNESCO ICT Competency Framework for Teachers</a></li>
+     </ul>
+      </div>
+
+      <div class="col12 education-mid">
+  <div class="science-flix">
+          <a href="https://digital.scholastic.com/site/launch/sfx?ucn=600020864"><img src="/img/scienceflix-logo.png"; alt=""></a> 
+          <div class="text"><h4>ScienceFlix</h4>
+           <p>The mobile-ready science resource that is transforming the way students access science topics, acquire scientific knowledge, and build a lasting interest in science, technology, and engineering. User ID: your library card number.</p>
+         </div>
+         </div>
+       
+         <div class="go">
+           <a href="https://digital.scholastic.com/site/launch/schgo?ucn=600020864"><img src="/img/scholastic-go-logo.jpg" alt=""></a>
+           <div class="text"><h4>Scholastic GO!</h4>
+           <p>Explore nonfiction texts, world newspapers, videos and more with this easy-to-navigate digital resource designed to strengthen content knowledge, vocabulary, and core proficiency skills. User ID: your library card number.</p>
+         </div>
+         </div>
+         
+      </div>
+
+    </div>
+
+    
+    <!-- footer -->
+    <div class="row">
+      <div class="col-12 footer">
+  
+          <div class="footer-container">
+            <div class="child"><i class="fas fa-alarm-clock footer-icon"></i>
+            <span>The library is open Monday through Thursday, 11 am to 6 pm.</span></div>
+        
+            <div class="child"><i class="fas fa-phone-square-alt footer-icon"></i>
+            <span>406.826.3101</span></div>
+        
+            <div class="child"><i class="fas fa-map-pin footer-icon"></i>
+              <span>108 W Railroad St, Plains, MT 59859</span></div>
+          </div>
+        
+          <div class="socials">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+      
+      </div>
+    </div>
+  </div>
+<script src="/slideshow.js"></script>
+  <script>
+   
+    const navSlide = () => {
+    // Creating variables for your burger and you nav
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-list');
+
+    // Adding the "nav-active" class onto the nav when the burger is clicked.
+burger.addEventListener('click', () => {
+    nav.classList.toggle('active')
+})
+}
+navSlide()
+  
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
